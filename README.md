@@ -12,7 +12,7 @@ CUDA toolkit==12.1
 cuDNN==8.9.x
 ```
 Other requirements can be installed with pip install -r requirements.txt
-NOTE: If you are unable to install detectron2 for some reeason visit their official installation guide: https://detectron2.readthedocs.io/en/latest/tutorials/install.html 
+NOTE: If you are unable to install detectron2 for some reason, visit their official installation guide: https://detectron2.readthedocs.io/en/latest/tutorials/install.html 
 Once everything is installed, run ``` main.py ``` to start training process, dataset must be in COCO format and ensure that weights and config files are initialized properly.
 ## Evaluation
 Once the training completes, you can evaluate the mode by running ```evaluate_model.py``` to generate the normalized confusion matrix and other metrics. Ensure that the input size matches the model's input size while training, you can use ``` shape.py ``` script to find that.
